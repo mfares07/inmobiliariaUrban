@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/contact.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+        <script defer src="./js/form.js"></script>
+        <script defer src="./js/hamburguesa.js"></script>
+        <script defer src="https://kit.fontawesome.com/d8d4270774.js" crossorigin="anonymous"></script>
+        <title>Contacto</title>
+</head>
+<body>
+    <header class="topheader">
+        <nav class="topnav">
+            <section  class="logo-hamburger">
+                <a href="index.html" target="_self">
+                    <img class="logo" src="./img/logo.svg" alt="inmobiliaria"/>
+                </a>
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-circle-xmark"></i>
+            </section>
+            <ul class="menu slide-menu">
+                <li><a href="index.html" target="_self">Inicio</a></li>
+                <li><a href="nosotros.html" target="_self">Nosotros</a></li>
+                <li><a href="inmuebles.html" target="_self">Inmuebles</a></li>
+                <li><a href="contacto.html" target="_self">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+    <main class="wrapper">
+
+        <form action="#" method="post" class="formulario slide-left">
+
+            <section class="form_section nombre">
+                <label for="name">Nombre:</label>
+                <input type="text" name="name" id="name" placeholder="juan">
+                <i class="validIcons fa-solid fa-circle-xmark"></i>
+                <p class="form_input_error">El nombre no debe tener caracteres especiales.</p>
+            </section>
+            
+            <section class="form_section apellido">
+                <label for="lastname">Apellido:</label>
+                <input type="text" name="lastname" id="lastname" placeholder="perez">
+                <i class="validIcons fa-solid fa-circle-xmark"></i>
+                <p class="form_input_error">El apellido no debe tener caracteres especiales.</p>
+            </section>
+            
+            <section class="form_section email">
+                <label for="email">E-mail:</label>
+                <input type="text" name="email" id="email" placeholder="mail@mail.com">
+                <i class="validIcons fa-solid fa-circle-xmark"></i>
+                <p class="form_input_error">Debe ser un mail válido.</p>
+            </section>
+            
+            <section class="form_section telefono">
+                <label for="phone">Teléfono:</label>
+                <input type="text" name="phone" id="phone" maxlength="14" placeholder="4567890">
+                <i class="validIcons fa-solid fa-circle-xmark"></i>
+                <p class="form_input_error">Solo números entre 7 y 14 dígitos.</p>
+            </section>
+            
+            <section class="form_section asunto">
+                <select name="choise" id="choise">
+                    <option value="elegir" selected>Selecciona el asunto</option>
+                    <option value="vender">Quiero vender</option>
+                    <option value="seminario">Seminario para compradores</option>
+                    <option value="tasar">Quiero tasar</option>
+                    <option value="otros">Otros</option>
+                </select>
+                <p class="form_input_error asunto_error">Debés seleccionar un asunto.</p>
+            </section>
+
+            <section class="form_section mensaje">
+                <label for="message">Tu mensaje</label>                
+                <textarea name="message" id="message" placeholder="Escribí tu mensaje..."></textarea>
+            </section>
+            
+            <section class="warning">
+                <p class="warning-p">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <b>Error:</b> Rellena el formulario correctamente por favor.
+                </p>
+            </section>
+            
+            <section class="form_section form_section_btn botones">
+                <button type="submit" class="form_btn_submit">Enviar</button>
+                <button type="reset" class="form_btn_reset">Limpiar</button>
+            </section>
+            
+            <section class="form_section exito">
+                <p class="formulario_sent_sucess formulario_exito">¡ Formulario enviado con éxito !</p>
+            </section>
+        </form>
+
+        <section class="lateral">
+
+            <section class="info slide-right">
+                <span class="empresa">Urban</span>
+                <section class="info_empresa">
+                    <p class="direccion"><i class="fa-solid fa-location-dot"></i>Av. Boedo 52, CABA.</p> 
+                    <p class="mail"><i class="fa-solid fa-envelope"></i>info@inmobxyz.com.ar</p>
+                    <p class="telefono"><i class="fa-solid fa-phone"></i>5950-1013</p>
+                </section>
+                <ul class="redes">
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>                
+            </section>
+            
+            <section class="mapa">
+                <iframe class="iframe_google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.6878267864904!2d-58.41816492930341!3d-34.61205460216755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca5f6a14c491%3A0x1fe6be0e1337ec68!2sAv.%20Boedo%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1680383709565!5m2!1ses!2sar" width="100%" height="50" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer class="pie">
+        <section class="pie_menu">
+            <nav>
+                <a href="index.html" target="_self">Inicio</a>
+                <a href="nosotros.html" target="_self">Nosotros</a>
+                <a href="inmuebles.html" target="_self">Inmuebles</a>
+                <a href="contacto.html" target="_self">Contacto</a>
+            </nav>
+        </section>
+
+        <section class="pie_info">
+            <p class="direccion"><i class="fa-solid fa-location-dot"></i>Av. Boedo 52, CABA.</p> 
+            <p class="mail"><i class="fa-solid fa-envelope"></i>info@urban.com.ar</p>
+            <p class="telefono"><i class="fa-solid fa-phone"></i>5950-1013</p>
+        </section>
+
+        <section class="pie_redes">
+            <h3 class="h2_redes">Seguinos:</h3>
+            <ul class="redes">
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>    
+        </section>
+
+        <section class="pie_derechos">
+            <small class="derechos"><p>&copy; 2023 | Todos los derechos reservados.</p></small>
+        </section>
+
+    </footer>
+</body>
+</html>

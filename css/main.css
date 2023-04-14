@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+    --white: #f7f1E5;
+    --orange: #E7B10A;
+    --lightGreen: #898121;
+    --darkGreen: #4C4B16;
+    --footerSize: 9rem;
+    font-family: 'Lato', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.topheader {
+    background-color: var(--orange);
+    box-shadow: 0 4px 5px black;
+    padding: 6px;
+    position: sticky;
+    top: 0;
+    z-index: 150;
+
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu {
+    font-size: 1.6rem;
+    font-weight: 500;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.logo-hamburger .fa-bars {
+    display: none;
+}
+
+.logo-hamburger .fa-circle-xmark {
+    display: none;
+}
+
+.logo {
+    width: 4rem;
+    height: 4rem;
+}
+
+.logo-hamburger:hover {
+    filter: drop-shadow(0 0 3px var(--white));
+}
+
+.menu li {
+    padding: 0 15px;
+}
+
+a {
+    color: rgb(44, 44, 44);
+    text-decoration: none;
+    transition: .4s all;
+}
+
+a:hover {
+    color: var(--white);
+    filter: drop-shadow(0px 0px 12px var(--darkGreen));
+}
+
+/*Footer*/
+.pie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    height: var(--footerSize);
+    margin-top: 3rem;
+    background-color: var(--darkGreen);
+    color: var(--white);
+}
+
+.pie_menu {
+    font-size: 1.12rem;
+    order: 1;
+}
+
+.pie_menu a {
+    display: block;
+    color: var(--white);
+}
+
+.pie_menu a:hover {
+    color: var(--orange);
+}
+
+.pie_info {
+    font-size: .85rem;
+    order: 2;
+}
+
+.pie_info p {
+    padding: .2rem;
+}
+
+.pie_info i {
+    padding: 0 1rem;
+}
+
+.pie_redes {
+    order: 3;
+}
+
+.pie_redes li {
+    padding: 1rem;
+    list-style: none;
+    display: inline-block;
+}
+
+.pie_redes a {
+    color: white;
+}
+
+.pie_redes a:hover {
+    color: var(--orange);
+}
+
+.pie_redes i {
+    font-size: 2rem;
+}
+
+.pie_redes h3 {
+    text-align: center;
+}
+
+.pie_derechos {
+    flex-basis: 100%;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 1rem;
+    order: 4;
+}
+
+/*Media Queries globales*/
+@media (max-width: 640px) {
+
+    .menu {
+        font-size: 1.3rem;
+    }
+
+    .logo {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .pie {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        gap: 2rem 0;
+        padding-top: 1rem;
+    }
+
+    .pie_menu {
+        font-size: 1.6rem;
+        order: 1;
+        display: none;
+    }
+
+    .pie_menu a {
+        display: block;
+        color: var(--white);
+    }
+
+    .pie_info {
+        font-size: 1rem;
+        order: 2;
+    }
+
+    .pie_redes a {
+        color: white;
+    }
+
+
+    .topheader {
+        padding: 8px 0 0 0;
+    }
+
+    .topnav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu {
+        font-size: 1.4rem;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    .slide-menu {
+        animation: slide-bajando 0.2s ease-out;
+    }
+
+    .menu-js {
+        display: block;
+    }
+
+    .logo {
+        width: 3.8rem;
+        height: 3.8rem;
+    }
+
+    .logo-hamburger {
+        display: flex;
+        width: 100%;
+        padding: .7rem 1.5rem;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .logo-hamburger .fa-bars {
+        display: block;
+        font-size: 3rem;
+        color: var(--darkGreen);
+    }
+
+    .logo-hamburger .fa-circle-xmark {
+        display: none;
+        font-size: 2rem;
+        color: var(--darkGreen);
+    }
+
+    .logo-hamburger .fa-bars-js {
+        display: none;
+    }
+
+    .logo-hamburger .fa-circle-xmark-js {
+        display: block;
+    }
+
+    .menu li {
+        width: 100%;
+        justify-content: flex-end;
+        padding: .5rem 0;
+        text-align: center;
+        box-shadow: 0 -2px 12px rgb(59, 59, 59);
+    }
+
+
+}
+
+/*Animacion*/
+@keyframes slide-bajando {
+    0% {
+        transform: translateY(-100px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@keyframes slide-subiendo {
+    0% {
+        transform: translateY(0)
+    }
+
+    100% {
+        transform: translateY(-100px)
+    }
+}

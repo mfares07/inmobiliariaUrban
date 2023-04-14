@@ -1,0 +1,552 @@
+:root {
+    --red: rgb(149, 3, 3);
+    --green: rgb(5, 159, 5);
+    --borderRadius: 1.4rem;
+    --heightMap: 30.5rem;
+}
+
+body {
+    background-image: url('../img/terraza.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main {
+    margin: 30px 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.lateral {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 1rem;
+
+}
+
+.wrapper .info {
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgba(123, 95, 5, 0.35);
+    box-shadow: 2px 4px 10px rgba(76, 75, 22, .7);
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.info_empresa {
+    text-align: left;
+}
+
+.info .redes li {
+    display: inline;
+    text-decoration: none;
+}
+
+.info .redes {
+    position: relative;
+    text-align: center;
+}
+
+
+.info .redes::before {
+    content: "___________________________";
+    display: block;
+}
+
+.info .redes::after {
+    content: "___________________________";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 2px;
+}
+
+.info i {
+    padding: 0.2rem .5rem;
+}
+
+.info ul i {
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.empresa {
+    font-size: 3rem;
+}
+
+.mapa {
+    border: none;
+    border: 6px solid rgba(76, 75, 22, .5);
+    border-radius: var(--borderRadius);
+    box-shadow: 2px 4px 10px rgba(76, 75, 22, .7);
+}
+
+.iframe_google {
+    width: 100%;
+    height: var(--heightMap);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+
+
+.formulario {
+    display: grid;
+    justify-content: center;
+    /* margin: 30px auto; */
+    grid:
+        "nombre     apellido" 6.5rem
+        /* prettier-ignore */
+        "email      telefono" 6.5rem
+        /* prettier-ignore */
+        "asunto     asunto" 2.5rem
+        /* prettier-ignore */
+        "mensaje    mensaje" 13rem
+        /* prettier-ignore */
+        "error      error" 2.8rem
+        /* prettier-ignore */
+        "botones    botones" 3rem
+        /* prettier-ignore */
+        "exito      exito" 1.8rem /
+        /* prettier-ignore */
+        19.5rem 19.5rem;
+    gap: 1rem;
+    width: 48rem;
+    padding: 1rem;
+    margin: 0 1rem;
+    background-color: rgba(123, 95, 5, 0.5);
+    border-radius: 20px;
+    box-shadow: 2px 4px 10px rgba(76, 75, 22, .6);
+
+}
+
+.form_section {
+    position: relative;
+}
+
+.formulario input {
+    width: 100%;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    line-height: 40px;
+    padding: 0 35px 0 15px;
+    transition: .5s ease-out all;
+    font-size: 1rem;
+
+}
+
+
+.formulario textarea {
+    height: 11.2rem;
+    width: 40rem;
+    max-width: 40rem;
+    padding: 0 35px 0 15px;
+    border-radius: 10px;
+    transition: .5s ease-out all;
+    font-size: 1rem;
+}
+
+.formulario select {
+    background-color: var(--darkGreen);
+    color: var(--white);
+    height: 2.8rem;
+    width: 50%;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: none;
+    border: 3px solid var(--darkGreen);
+    box-shadow: 3px 0 26px rgba(76, 75, 22, .3);
+}
+
+.formulario label {
+    padding: .5rem 0;
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.formulario .form_input_error {
+    display: block;
+    margin-bottom: 0;
+    font-size: .8rem;
+    opacity: 0;
+}
+
+.formulario .form_input_error-js {
+    display: block;
+    color: var(--red);
+    padding: 0;
+    font-size: .9rem;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.formulario .validIcons {
+    position: absolute;
+    right: .7rem;
+    bottom: 1.875rem;
+    /* bottom: 1rem; */
+    font-size: 1rem;
+    z-index: 20;
+    opacity: 0;
+}
+
+.form_section-yes .validIcons {
+    color: var(--green);
+    opacity: 1;
+}
+
+.form_section-no .validIcons {
+    color: var(--red);
+    opacity: 1;
+}
+
+
+.formulario .nombre {
+    grid-area: nombre;
+}
+
+.formulario .apellido {
+    grid-area: apellido;
+}
+
+.formulario .email {
+    grid-area: email;
+}
+
+.formulario.telefono {
+    grid-area: telefono;
+}
+
+.formulario .asunto {
+    grid-area: asunto;
+}
+
+.formulario .mensaje {
+    grid-area: mensaje;
+}
+
+.warning {
+    grid-area: error;
+    background-color: var(--orange);
+    height: 3rem;
+    line-height: 3rem;
+    align-items: baseline;
+    text-align: center;
+    display: none;
+}
+
+.formulario .warning-js {
+    display: block;
+}
+
+.formulario .botones {
+    grid-area: botones;
+    justify-self: center;
+}
+
+.formulario .exito {
+    grid-area: exito;
+}
+
+.form_section_btn button {
+    background-color: var(--darkGreen);
+    color: var(--white);
+    margin: 0 1rem;
+    width: 12rem;
+    height: 2.6rem;
+    line-height: 1.8rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.form_section_btn button:hover {
+    color: var(--orange);
+    box-shadow: 0 0 14px var(--orange);
+}
+
+.formulario .exito {
+    line-height: 1.8rem;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--green);
+    border-radius: 8px;
+    color: white;
+    display: none;
+}
+
+.formulario .exito-js {
+    display: block;
+}
+
+.form_section-no #name,
+.form_section-no #lastname,
+.form_section-no #email,
+.form_section-no #phone {
+    border: 3px solid var(--red);
+}
+
+/***************/
+/*Animaciones*/
+/***************/
+.slide-left {
+    animation: slide-left 0.4s ease-out both
+}
+
+.slide-right {
+    animation: slide-right 0.3s ease-out both
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(-100px)
+    }
+
+    100% {
+        transform: translateX(0)
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(60px)
+    }
+
+    100% {
+        transform: translateX(0)
+    }
+}
+
+
+/***************/
+/*Media Queries*/
+/***************/
+@media (max-width:1854px) {
+
+    .wrapper .info {
+        padding: 5% 7%;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+
+    .empresa {
+        flex-basis: 100%;
+    }
+
+}
+
+@media (max-width:1400px) {
+
+    .wrapper .info {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .empresa {
+        flex-basis: 100%;
+    }
+
+    .info .redes::before {
+        top: 100%;
+    }
+
+    .info .redes::after {
+        left: 10px;
+        bottom: -2px;
+    }
+
+}
+
+@media (max-width:1200px) {
+    .wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .lateral {
+        width: 100%;
+        max-width: 48rem;
+        order: 1;
+    }
+
+    .formulario {
+        order: 2;
+    }
+
+
+    .wrapper .info {
+        padding: 5% 7%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .info ul.redes i {
+        padding: 0 1rem;
+        font-size: 2.2rem;
+    }
+
+    .info .redes::before {
+        position: absolute;
+        content: "__________________________________________";
+        left: 0;
+        top: -28px;
+    }
+
+    .info .redes::after {
+        content: "__________________________________________";
+        left: 0;
+        bottom: 20px;
+    }
+}
+
+@media (max-width:800px) {
+    .wrapper {
+        margin: 1.6rem;
+    }
+
+    .empresa {
+        flex-basis: 100%;
+    }
+
+    .formulario {
+        width: 90vw;
+        justify-content: center;
+        grid:
+            "nombre     apellido" 6.5rem
+            /* prettier-ignore */
+            "email      telefono" 6.5rem
+            /* prettier-ignore */
+            "asunto     asunto" 2.5rem
+            /* prettier-ignore */
+            "mensaje    mensaje" 13rem
+            /* prettier-ignore */
+            "error      error" 3rem
+            /* prettier-ignore */
+            "botones    botones" 3rem
+            /* prettier-ignore */
+            "exito      exito" 1.8rem /
+            /* prettier-ignore */
+            17.5rem 17.5rem;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .form_section {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .form_section textarea {
+        width: 34rem;
+        height: 10rem;
+        max-width: 34rem;
+    }
+
+    .info .redes::before,
+    .info .redes::after {
+        content: "";
+    }
+
+    .warning {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .form_section_btn {
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
+@media (max-width:640px) {
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0 1rem;
+        margin: 0;
+        padding: 1.6rem 0 0 0;
+    }
+
+    .formulario input,
+    .formulario textarea,
+    .formulario select {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .formulario select {
+        margin-top: 1rem;
+    }
+
+    .form_section label {
+        margin: auto;
+        font-size: 1.2rem;
+    }
+
+    .form_section {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+
+    .formulario .form_input_error {
+        margin: 0 auto;
+    }
+
+    .formulario .botones {
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    .wrapper .info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lateral .info {
+        padding: .5rem 0;
+    }
+
+    .info_empresa {
+        margin-bottom: 1rem;
+    }
+
+    .formulario .validIcons {
+        right: 5rem;
+        bottom: 1.875rem;
+    }
+
+
+
+}
