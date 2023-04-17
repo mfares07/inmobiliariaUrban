@@ -2,7 +2,7 @@ main {
     margin: 30px 0;
 }
 
-h1 {
+h1{
     text-align: center;
     color: var(--darkGreen);
     margin: 1rem 1rem;
@@ -13,12 +13,12 @@ h1 {
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: 40%;
-    background-size: cover;
+    background-size: cover;        
 }
 
 .empresa {
     font-size: 4rem;
-    /*    text-align: center;
+/*    text-align: center;
     margin: 1rem 1rem;
     padding: 2rem;
     height: 400px;
@@ -27,10 +27,10 @@ h1 {
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: 40%;
-    background-size: cover;    */
+    background-size: cover;    */    
 }
 
-.section-box {
+.section-box{
     /*width: 98%;*/
     padding: 1rem;
     margin: 1rem;
@@ -38,80 +38,89 @@ h1 {
     border-radius: 20px;
     box-shadow: 2px 4px 10px rgba(76, 75, 22, .6);
     text-align: justify;
-
+    
     /* flexbox */
-    display: flex;
+    display: flex;    
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
     align-content: stretch;
     align-items: center;
-    gap: 1rem;
+    gap: 1rem;    
 }
 
-.section-box h2 {
+.section-box h2{
     border: 3px solid var(--lightGreen);
-    border-radius: 3px;
+    border-radius: 10px;
     text-align: center;
     padding: 1rem;
     width: auto;
 }
 
-.section-box article {
+.section-box article{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     margin: 1rem 0rem;
     height: auto;
     width: 90%;
-    max-width: 36rem;
+    max-width: 36rem;      
 }
 
-.section-box p {
+.section-box p{   
     font-size: 1.1rem;
     text-align: justify;
     margin: .5rem 0;
 }
 
-.section-box img {
+.section-box img{
     /* escala la imagen en forma responsiva */
     height: auto;
     width: 100%;
     /* centra la imagen en el bloque */
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;   
 }
 
-.section-box ul {
+.section-box ul{
     list-style: disc outside;
-    text-align: justify;
+    text-align: justify;    
     margin-left: 1rem;
     font-size: 1.1rem;
 }
 
-.section-box table {
+.section-box table{
     border: 1px solid black;
     margin: 1rem 0rem;
+    height: auto;
     width: 90%;
-    max-width: 50rem;
+    max-width: 55rem;
 }
 
-.section-box td {
+.img-transparente{
+    background-image: url("../img/vivienda-una-nube-de-palabras.jpeg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-x: center;
+}
+
+.section-box td{
     border: 1px solid black;
     padding: 1rem;
 }
 
+
 /* MEDIA QUERY */
 
-@media screen and (min-width: 641px) {
-    .section-box h2 {
+@media screen and (min-width: 641px){
+    .section-box h2{
         width: 90%;
     }
-}
+} 
 
 /* ---------- VERSION ANTERIOR SOLO CON IDs ----------*/
 
-#somos {
+#somos{
     /*width: 98%;*/
     padding: 1rem;
     margin: 1rem;
@@ -121,7 +130,7 @@ h1 {
     text-align: justify;
 
     /* flexbox */
-    display: flex;
+    display: flex;    
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
@@ -130,22 +139,22 @@ h1 {
     gap: 1rem;
 }
 
-#somos h2 {
+#somos h2{
     border: 3px solid var(--lightGreen);
     border-radius: 3px;
     text-align: center;
     padding: 1rem;
-    width: 90%;
+    width:90%;
 }
 
-#somos article {
+#somos article{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     margin: 1rem 0rem;
     height: auto;
     width: 90%;
     max-width: 36rem;
-    /*
+/*
     border: 1px solid black;
     margin: 1rem 0rem;
     width: 90%;
@@ -155,33 +164,33 @@ h1 {
 */
 }
 
-#somos p {
+#somos p{   
     font-size: 1.1rem;
     text-align: justify;
     margin: .5rem 0;
 }
 
-#somos-img {
+#somos-img{
     /* escala la imagen en forma responsiva */
     height: auto;
     width: 100%;
     /* centra la imagen en el bloque */
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;   
 }
 
-#diferencia {
+#diferencia{
     /*width: 98%;*/
     padding: 1rem;
     margin: 1rem;
     background-color: rgba(123, 95, 5, 0.5);
     border-radius: 20px;
     box-shadow: 2px 4px 10px rgba(76, 75, 22, .6);
-    text-align: justify;
+    text-align:justify;
 
     /* flexbox */
-    display: flex;
+    display: flex;    
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
@@ -191,42 +200,42 @@ h1 {
 }
 
 
-#diferencia h2 {
+#diferencia h2{
     border: 3px solid var(--lightGreen);
-    border-radius: 3px;
+    border-radius: 3px;    
     text-align: center;
     padding: 1rem;
-    width: 90%;
+    width: 90%;    
 }
 
-#diferencia article {
+#diferencia article{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     margin: 1rem 0rem;
     width: 90%;
     max-width: 36rem;
     height: auto;
-    text-align: justify;
+    text-align: justify;   
 }
 
-#diferencia ul {
+#diferencia ul{
     list-style: circle outside;
-    text-align: justify;
+    text-align: justify;    
     margin-left: 1rem;
     font-size: 1.1rem;
 }
 
-#diferencia-img {
+#diferencia-img{
     /* escala la imagen en forma responsiva */
     height: auto;
     width: 100%;
     /* centra la imagen en el bloque */
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;   
 }
 
-#mision {
+#mision{
     /*width: 98%;*/
     padding: 1rem;
     margin: 1rem;
@@ -236,7 +245,7 @@ h1 {
     text-align: justify;
 
     /* flexbox */
-    display: flex;
+    display: flex;    
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
@@ -245,25 +254,26 @@ h1 {
     gap: 1rem;
 }
 
-#mision h2 {
+#mision h2{
     border: 3px solid var(--lightGreen);
-    border-radius: 3px;
+    border-radius: 3px;    
     text-align: center;
     padding: 1rem;
-    width: 90%;
+    width: 90%;    
 }
 
-#mision table {
+#mision table{
     border: 1px solid black;
     margin: 1rem 0rem;
     width: 90%;
 }
 
-#mision td {
+#mision td{
     border: 1px solid black;
     padding: 1rem;
 }
 
-#mision ul {
+#mision ul{
     list-style: circle inside;
 }
+
