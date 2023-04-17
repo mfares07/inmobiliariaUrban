@@ -1,0 +1,220 @@
+
+*{  box-sizing: border-box;
+    background-image: url("../img/04.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+
+
+
+#sabemosdepropiedades{
+       text-align: center;
+       font-weight: 600;
+       margin: 4rem 0rem 4rem 0rem;
+}
+
+#container1{
+    border: 2px solid black;
+    margin-bottom: 0.1rem;
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-columns: repeat(5, 3rem);
+    padding: 2rem 2rem;
+}
+
+
+
+
+#ventas{
+    margin-left: 6rem;
+}
+ 
+
+
+
+.casas{
+    font-size: 30px;
+    font-weight: 600;
+    color: aqua;
+    border: 1px solid white;
+    padding: .5rem 1.5rem;
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    margin: 0rem 0rem 0rem 13rem;
+}
+.casas::before{
+    content: "Casas";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.locales{
+    font-size: 30px;
+    font-weight: 600;
+    color: aqua;
+    border: 1px solid white;
+    padding: .5rem 1.5rem;
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    margin: 0rem 0rem 0rem 38rem;
+}
+.locales::before{
+    content: "Locales";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.oficinas{
+    font-size: 30px;
+    font-weight: 600;
+    color: aqua;
+    border: 1px solid white;
+    padding: .5rem 1.5rem;
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    margin: 0rem 0rem 0rem 63rem;
+}
+.oficinas::before{
+    content: "Oficinas";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.departamentos{
+    font-size: 30px;
+    font-weight: 600;
+    color: aqua;
+    border: 1px solid white;
+    padding: .5rem 1.5rem;
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    margin: 0rem 0rem 0rem 20rem;
+}
+.departamentos::before{
+    content: "Departamentos";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.emprendimientos{
+    font-size: 30px;
+    font-weight: 600;
+    color: aqua;
+    border: 1px solid white;
+    padding: .5rem 1.5rem;
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    margin: 0rem 0rem 0rem 47rem;
+}
+.emprendimientos::before{
+    content: "Emprendimientos";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lotes{
+    font-size: 30px;
+    font-weight: 600;
+    color: aqua;
+    border: 1px solid white;
+    padding: .5rem 1.5rem;
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    margin: 0rem 0rem 0rem 9rem;
+}
+.lotes::before{
+    content: "Lotes";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.depositos{
+    font-size: 30px;
+    font-weight: 600;
+    color: aqua;
+    border: 1px solid white;
+    padding: .5rem 1.5rem;
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    margin: 0rem 0rem 0rem 35rem;
+}
+.depositos::before{
+    content: "Depositos";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.campos{
+    font-size: 30px;
+    font-weight: 600;
+    color: aqua;
+    border: 1px solid white;
+    padding: .5rem 1.5rem;
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    margin: 0rem 0rem 0rem 60rem;
+}
+.campos::before{
+    content: "Campos";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.casas:hover{
+    transform: scale(1.2, 1.2);
+}
+.locales:hover{
+    transform: scale(1.2, 1.2);
+}
+.oficinas:hover{
+    transform: scale(1.2, 1.2);
+}
+.departamentos:hover{
+    transform: scale(1.2, 1.2);
+}
+.emprendimientos:hover{
+    transform: scale(1.2, 1.2);
+}
+.lotes:hover{
+    transform: scale(1.2, 1.2);
+}
+.depositos:hover{
+    transform: scale(1.2, 1.2);
+}
+.campos:hover{
+    transform: scale(1.2, 1.2);
+}
