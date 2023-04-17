@@ -42,7 +42,7 @@ body {
 .casas {
     font-size: 30px;
     font-weight: 600;
-    color: lightgreen;
+    color: var(--lightGreen);
     border: 1px solid white;
     padding: .5rem 1.5rem;
     background-color: black;
@@ -63,7 +63,7 @@ body {
 .locales {
     font-size: 30px;
     font-weight: 600;
-    color: lightgreen;
+    color: var(--lightGreen);
     border: 1px solid white;
     padding: .5rem 1.5rem;
     background-color: black;
@@ -84,7 +84,7 @@ body {
 .oficinas {
     font-size: 30px;
     font-weight: 600;
-    color: lightgreen;
+    color: var(--lightGreen);
     border: 1px solid white;
     padding: .5rem 1.5rem;
     background-color: black;
@@ -105,7 +105,7 @@ body {
 .departamentos {
     font-size: 30px;
     font-weight: 600;
-    color: lightgreen;
+    color: var(--lightGreen);
     border: 1px solid white;
     padding: .5rem 1.5rem;
     background-color: black;
@@ -126,7 +126,7 @@ body {
 .emprendimientos {
     font-size: 30px;
     font-weight: 600;
-    color: lightgreen;
+    color: var(--lightGreen);
     border: 1px solid white;
     padding: .5rem 1.5rem;
     background-color: black;
@@ -147,7 +147,7 @@ body {
 .lotes {
     font-size: 30px;
     font-weight: 600;
-    color: lightgreen;
+    color: var(--lightGreen);
     border: 1px solid white;
     padding: .5rem 1.5rem;
     background-color: black;
@@ -168,7 +168,7 @@ body {
 .depositos {
     font-size: 30px;
     font-weight: 600;
-    color: lightgreen;
+    color: var(--lightGreen);
     border: 1px solid white;
     padding: .5rem 1.5rem;
     background-color: black;
@@ -189,7 +189,7 @@ body {
 .campos {
     font-size: 30px;
     font-weight: 600;
-    color: lightgreen;
+    color:var(--lightGreen) ;
     border: 1px solid white;
     padding: .5rem 1.5rem;
     background-color: black;
