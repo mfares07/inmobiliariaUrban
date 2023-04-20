@@ -236,26 +236,34 @@ body {
     transform: scale(1.2, 1.2);
 }
 
-#container3{ 
+#container2{ 
     margin-top: .5rem;
     display: inline-flex;
 }
 
-.barrios{
-    display: inline;
-    margin: 0rem 0rem 0rem 1rem;
-}
 
 .boton {
     color: white;
     background-color: black;
+    cursor: pointer;
     font-size: 18px;   
     font-weight: bold;
-    padding: 0.5rem .5rem .5rem .5rem;
-    margin-left: 3rem;
+    padding: 0.5rem 0.5rem .5rem .5rem;
+    margin-left: 2rem;
     margin-top: 0rem;
-    border-radius: 35px;
-    
+    border-radius: 35px; 
+}
+
+#barrios{
+    display: inline;
+    margin: 0rem 1.5rem 0rem 0rem;  
+    background-color: var(--darkGreen);
+    color: var(--white);
+    height: 1.6rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
 }
 
 
