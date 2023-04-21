@@ -57,9 +57,6 @@ body {
     height: 4rem;
 }
 
-.logo-hamburger:hover {
-    filter: drop-shadow(0 0 3px var(--white));
-}
 
 .menu li {
     padding: 0 15px;
@@ -75,6 +72,10 @@ a {
 .menu a:hover {
     color: var(--white);
     filter: drop-shadow(0px 0px 12px var(--darkGreen));
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 3px var(--white));
 }
 
 /*Footer*/
@@ -153,11 +154,6 @@ a {
 
 /*Media Queries globales*/
 @media (max-width: 640px) {
-    .logo-hamburger:not(.fa-bars) {
-        /*quitar efectos de mouse a todos los elementos con 
-        clase .logo-hamburguer, y solo aplicarlo a la clase .fa-bars*/
-        pointer-events: none;
-    }
 
     .pie {
         flex-direction: column;
@@ -234,14 +230,12 @@ a {
         display: block;
         font-size: 2.4rem;
         color: var(--darkGreen);
-        pointer-events: auto;
     }
 
     .logo-hamburger .fa-circle-xmark {
         display: none;
         font-size: 2rem;
         color: var(--darkGreen);
-        pointer-events: auto;
     }
 
     .logo-hamburger .fa-bars-js {
