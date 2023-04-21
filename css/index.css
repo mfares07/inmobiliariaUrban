@@ -7,7 +7,7 @@ body {
 
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-image: url("../img/04.jpg");
+    background-image: url("../img/WhatsApp\ Image\ 2023-04-20\ at\ 22.02.45.jpeg");
     background-size: 100%;
 }
 
@@ -238,6 +238,7 @@ body {
 
 #container2{ 
     margin-top: .5rem;
+    margin-left: 1rem;
     display: inline-flex;
 }
 
