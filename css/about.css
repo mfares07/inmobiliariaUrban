@@ -97,11 +97,18 @@ h1{
     max-width: 55rem;
 }
 
+.p-1r{   
+    padding-top: 1rem;
+}
+
+.a-new{
+    color: #4C4B16;
+    text-decoration: double;
+}
+
 .img-transparente{
-    background-image: url("../img/vivienda-una-nube-de-palabras.jpeg");
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position-x: center;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
 }
 
 .section-box td{
