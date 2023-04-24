@@ -4,11 +4,11 @@
 }
 
 body {
-
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-image: url("../img/pm.jpeg");
-    background-size: 100%;
+    /*background-size: 100%;*/
+    width: 100%;
 }
 
 
@@ -21,14 +21,13 @@ body {
 }
 
 #container1 {
-    border: 2px solid black;
-    margin-bottom: 0.1rem;
-    display: grid;
+    width: 100%;
+    margin-bottom: 3rem;
+    text-align: center;
+    /*display: grid;
     grid-template-columns: 50%;
-    grid-template-columns: repeat(5, 3rem);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: .8rem .8rem;
+    /*grid-template-columns: repeat(5, 3rem);
+    margin-top: 1rem;*/
 }
 
 
@@ -45,8 +44,7 @@ body {
     background-color: black;
     border-radius: 10px;
     cursor: pointer;
-    position: relative;
-    margin: 0rem 0rem 0rem 10rem;
+    position: relative;  
 }
 
 .casas::before {
@@ -66,8 +64,7 @@ body {
     background-color: black;
     border-radius: 10px;
     cursor: pointer;
-    position: relative;
-    margin: 0rem 0rem 0rem 35rem;
+    position: relative;  
 }
 
 .locales::before {
@@ -87,8 +84,7 @@ body {
     background-color: black;
     border-radius: 10px;
     cursor: pointer;
-    position: relative;
-    margin: 0rem 0rem 0rem 60rem;
+    position: relative;   
 }
 
 .oficinas::before {
@@ -108,8 +104,7 @@ body {
     background-color: black;
     border-radius: 10px;
     cursor: pointer;
-    position: relative;
-    margin: 0rem 0rem 0rem 17rem;
+    position: relative;   
 }
 
 .departamentos::before {
@@ -129,8 +124,7 @@ body {
     background-color: black;
     border-radius: 10px;
     cursor: pointer;
-    position: relative;
-    margin: 0rem 0rem 0rem 44rem;
+    position: relative; 
 }
 
 .emprendimientos::before {
@@ -151,7 +145,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
     position: relative;
-    margin: 0rem 0rem 0rem 6rem;
+    
 }
 
 .lotes::before {
@@ -172,7 +166,6 @@ body {
     border-radius: 10px;
     cursor: pointer;
     position: relative;
-    margin: 0rem 0rem 0rem 32rem;
 }
 
 .depositos::before {
@@ -193,7 +186,6 @@ body {
     border-radius: 10px;
     cursor: pointer;
     position: relative;
-    margin: 0rem 0rem 0rem 57rem;
 }
 
 .campos::before {
@@ -237,9 +229,8 @@ body {
 }
 
 #container2{ 
-    margin-top: .5rem;
-    margin-left: 1rem;
-    display: inline-flex;
+    text-align: left;
+    width: 100%;
 }
 
 
@@ -250,14 +241,14 @@ body {
     font-size: 18px;   
     font-weight: bold;
     padding: 0.5rem 0.5rem .5rem .5rem;
-    margin-left: 2rem;
+    margin-left: .3rem;
     margin-top: 0rem;
     border-radius: 35px; 
 }
 
 #barrios{
     display: inline;
-    margin: 0rem 1.5rem 0rem 0rem;  
+    margin-left: 1rem;
     background-color: var(--darkGreen);
     color: var(--white);
     height: 1.6rem;
@@ -268,3 +259,51 @@ body {
 }
 
 
+@media screen and (min-width: 760px) {
+    .casas{
+        margin: 0rem 2rem 2rem 1rem;
+    }
+
+    .locales{
+        margin: 0rem 2rem 2rem 1rem;
+    }  
+
+    .oficinas{
+        margin: 0rem 2rem 2rem 1rem;
+    }
+    
+    .departamentos{
+        margin: 1rem 2rem 2rem 1rem;
+    }
+
+    .emprendimientos{
+        margin: 1rem 2rem 2rem 1rem;
+    }
+
+    .lotes{
+        margin: 1rem 2rem .7rem 1rem;
+    }
+
+    .depositos{
+        margin: 1rem 2rem .7rem 1rem; 
+    }
+
+    .campos{
+        margin: 1rem 2rem .7rem 1rem;
+    }
+    
+    #container2{
+        display: inline-flex;
+    }
+
+    #barrios{
+        display: inline;
+        margin-top: 0rem;
+    }
+
+    .boton{
+        margin-right: 2rem;
+    }
+
+
+}
