@@ -481,6 +481,16 @@ main {
         justify-content: center;
     }
 
+    .formulario .form_input_error {
+        margin: 0 auto;
+        font-size: .8rem;
+    }
+
+    .formulario .validIcons {
+        margin-right: 10%;
+        bottom: 1rem;
+    }
+
 
 }
 
@@ -521,6 +531,7 @@ main {
 
     .formulario .form_input_error {
         margin: 0 auto;
+        font-size: .7rem;
     }
 
     .formulario .botones {
@@ -544,7 +555,7 @@ main {
     }
 
     .formulario .validIcons {
-        right: 5rem;
+        margin-right: 15%;
         bottom: 1.875rem;
     }
 
