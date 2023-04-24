@@ -21,19 +21,11 @@ body {
 }
 
 #container1 {
+    /*margin: 1px solid black;*/
     width: 100%;
     margin-bottom: 3rem;
     text-align: center;
-    /*display: grid;
-    grid-template-columns: 50%;
-    /*grid-template-columns: repeat(5, 3rem);
-    margin-top: 1rem;*/
 }
-
-
-
-
-
 
 .casas {
     font-size: 30px;
@@ -257,7 +249,18 @@ body {
     font-weight: bold;
     text-align: center;
 }
+ #choise{
+    margin-left: 1rem;
+ }
+ 
 
+
+ @media screen and (min-width: 641px){
+    #container2 {
+        margin-bottom: 6.9rem;
+
+    }
+ }
 
 @media screen and (min-width: 760px) {
     .casas{
@@ -293,17 +296,60 @@ body {
     }
     
     #container2{
-        display: inline-flex;
+        border: 2px solid transparent;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 4.8rem;
+    }
+
+    #choise{
+        margin-left: 1rem;
     }
 
     #barrios{
-        display: inline;
+        /*display: inline;*/
         margin-top: 0rem;
+        margin-left: 1rem;
     }
 
     .boton{
-        margin-right: 2rem;
+        margin-right: 1rem;
     }
 
+}
+
+
+@media screen and (min-width: 896px){
+    #container2 {
+        margin-bottom: 6rem;
+    }
+        #barrios{
+            margin-left: 0rem;
+        }
+        .boton{
+            margin-left: 2rem;
+        }
+    
+}
+
+
+@media screen and (min-width: 943px){
+    #container2 {
+        margin-bottom: 5.2rem;
+        }
+
+}
+
+@media screen and (min-width: 1003px){
+   #container2 {
+        margin-bottom: 10rem;
+    }
+    
+}
+
+@media screen and (min-width: 1200px){
+    #container2 {
+        margin-bottom: 17rem;
+    }
 
 }
