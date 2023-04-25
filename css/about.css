@@ -1,3 +1,9 @@
+body {
+    background-image: url('../img/terraza.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 main {
     margin: 30px 0;
     overflow-x: hidden;
