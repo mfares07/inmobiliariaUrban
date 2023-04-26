@@ -11,9 +11,9 @@ body {
     background-position: center;
     width: 100%;
 }
- /*main {
+ main {
     min-height: 100vh;
- }*/
+ }
 
 
 
@@ -274,16 +274,9 @@ body {
  
 
 
- @media screen and (min-width: 641px){
-    #container2 {
-        margin-bottom: 6.9rem;
-
-    }
- }
-
 @media screen and (min-width: 760px) {
     #container1{
-        padding: 19px; 
+        padding: 19px;    
     }
     
     .casas{
@@ -321,6 +314,7 @@ body {
 
     #container2{
         border: 2px solid transparent;
+        padding: 10px;
         display: flex;
         flex-direction: row;
         margin-top: 0;
@@ -332,7 +326,6 @@ body {
     }
 
     .barrios{
-        /*display: inline;*/
         margin-top: 0rem;
         margin-left: 1rem;
     }
@@ -358,23 +351,50 @@ body {
 }
 
 
-@media screen and (min-width: 943px){
-    #container2 {
-        margin-bottom: 5.2rem;
-        }
 
-}
-
-@media screen and (min-width: 1003px){
-   #container2 {
-        margin-bottom: 10rem;
+@media screen and (min-width: 1000px){
+    #sabemosdepropiedades{
+        padding-top: 1rem;
+    }
+    #container1{
+        width: 100%;
+        border: 2px solid transparent;
     }
     
-}
-
-@media screen and (min-width: 1200px){
-    #container2 {
-        margin-bottom: 6rem;
+    .casas{
+        margin: 2rem 7rem;
     }
-
+    .locales{
+        margin: 2rem 7rem;
+    }
+    .oficinas{
+        margin: 2rem 7rem;
+    }
+    .departamentos{
+        margin-left: 15rem;
+    }
+    .emprendimientos{
+        margin-right: 15rem;
+    }
+    .lotes{
+        margin: 2rem 5rem;
+    }
+    .depositos{
+        margin: 2rem 5rem;
+    }
+    .campos{
+        margin: 2rem 5rem;
+    }
+     
+     .choise{
+        color: black;
+        background-color: rgba(255, 255, 255, 0.3);
+     }
+     .barrios{
+        margin-top: 30px;
+        height: 1.9rem;
+     }
+     .boton{
+        margin-top: 25px;
+     }
 }
