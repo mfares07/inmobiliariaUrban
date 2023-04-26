@@ -30,6 +30,7 @@ function validaTodo() {
         return true;
     }
     else {
+        e.preventDefault();
         return false;
     }
 }
@@ -50,8 +51,7 @@ function envio(e) {
             document.querySelector('.formulario .exito').classList.remove('exito-js');
         }, 4000);
     }
-    else {
-        e.preventDefault();
+    else {        
         if (selector.value == 'elegir') {
             document.querySelector('.asunto .form_input_error').classList.add('form_input_error-js');
         }
