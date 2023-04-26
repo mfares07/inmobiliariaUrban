@@ -30,7 +30,6 @@ function validaTodo() {
         return true;
     }
     else {
-        e.preventDefault();
         return false;
     }
 }
@@ -42,7 +41,8 @@ function chequearWarning() {
 
 //Esta función agrega mensaje de exito si la validación fue correcta, y a los 4 segundos se desaparece el mensaje. 
 //De lo contrario, agrega un mensaje de error en los inputs.
-function envio(e) {    
+function envio(e) {
+    e.preventDefault();
     chequearWarning();
     if (validaTodo()) {
         formulario.submit();
@@ -52,7 +52,7 @@ function envio(e) {
             document.querySelector('.formulario .exito').classList.remove('exito-js');
         }, 4000);
     }
-    else {        
+    else {
         if (selector.value == 'elegir') {
             document.querySelector('.asunto .form_input_error').classList.add('form_input_error-js');
         }
