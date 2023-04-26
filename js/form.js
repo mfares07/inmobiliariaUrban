@@ -42,7 +42,7 @@ function chequearWarning() {
 //Esta función agrega mensaje de exito si la validación fue correcta, y a los 4 segundos se desaparece el mensaje. 
 //De lo contrario, agrega un mensaje de error en los inputs.
 function envio(e) {
-    e.preventDefault();
+    //e.preventDefault();
     chequearWarning();
     if (validaTodo()) {
         reset();
