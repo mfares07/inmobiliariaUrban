@@ -45,6 +45,7 @@ function envio(e) {
     e.preventDefault();
     chequearWarning();
     if (validaTodo()) {
+        formulario.submit();
         reset();
         document.querySelector('.formulario .exito').classList.add('exito-js');
         setInterval(() => {
