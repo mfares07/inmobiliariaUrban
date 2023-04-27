@@ -95,12 +95,13 @@ let checkearInputs = (e) => {
 selector.addEventListener('change', () => {
     if (selector.value !== 'elegir') {
         revisar['select'] = 1;
-        document.querySelector('.asunto .form_input_error').classList.remove('form_input_error-js');
+        // document.querySelector('.asunto .form_input_error').classList.remove('form_input_error-js');
     }
     else {
         revisar['select'] = 0;
-        document.querySelector('.asunto .form_input_error').classList.add('form_input_error-js');
+        // document.querySelector('.asunto .form_input_error').classList.add('form_input_error-js');
     }
+    document.querySelector('.asunto .form_input_error').classList.switch('form_input_error-js');
     // chequearWarning();
 })
 //Compruebo si el textarea se completó y envío un 1 al objeto revisar en la propiedad correspondiente, de lo contrario un 0
