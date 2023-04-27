@@ -101,7 +101,7 @@ selector.addEventListener('change', () => {
         revisar['select'] = 0;
         document.querySelector('.asunto .form_input_error').classList.add('form_input_error-js');
     }
-    chequearWarning();
+    // chequearWarning();
 })
 //Compruebo si el textarea se completó y envío un 1 al objeto revisar en la propiedad correspondiente, de lo contrario un 0
 let verificaMensaje = (e) => {
