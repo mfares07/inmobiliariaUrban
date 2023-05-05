@@ -258,6 +258,7 @@ a {
 
     .topnav {
         touch-action: none;
+        -webkit-tap-highlight-color: transparent;
     }
 
     .logo-hamburger .fa-bars {
