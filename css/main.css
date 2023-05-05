@@ -44,6 +44,20 @@ body {
     margin: 0;
 }
 
+.logo-hamburger {
+    position: relative;
+}
+
+span.slogan {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--darkGreen);
+    position: absolute;
+    left: 5rem;
+    bottom: 1rem;
+    line-height: 1rem;
+}
+
 .logo-hamburger .fa-bars {
     display: none;
 }
@@ -153,6 +167,12 @@ a {
 }
 
 /*Media Queries globales*/
+@media (max-width: 800px) {
+    span.slogan {
+        display: none;
+    }
+}
+
 @media (max-width: 640px) {
 
     .pie {
@@ -215,6 +235,16 @@ a {
     .logo {
         width: 3.8rem;
         height: 3.8rem;
+    }
+
+    span.slogan {
+        font-size: 1.2rem;
+        display: inline;
+        position: static;
+        margin: 12px auto;
+        left: 50vh;
+        right: 50vh;
+        bottom: 1.6rem;
     }
 
     .logo-hamburger {
