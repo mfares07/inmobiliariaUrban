@@ -256,6 +256,10 @@ a {
         cursor: pointer;
     }
 
+    .logo-hamburger:active {
+        background-color: transparent;
+    }
+
     .logo-hamburger .fa-bars {
         display: block;
         font-size: 2.4rem;
