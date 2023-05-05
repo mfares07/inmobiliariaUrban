@@ -256,8 +256,8 @@ a {
         cursor: pointer;
     }
 
-    .logo-hamburger:active {
-        background-color: transparent;
+    .logo-hamburger {
+        touch-action: none;
     }
 
     .logo-hamburger .fa-bars {
