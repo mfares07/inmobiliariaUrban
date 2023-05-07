@@ -365,7 +365,10 @@ body {
         padding-top: 1rem;
     }
     #container1{
-        width: 100%;
+        border: 2px solid transparent;  
+    }
+
+    #container2{
         border: 2px solid transparent;
     }
     
@@ -406,3 +409,4 @@ body {
         margin-top: 25px;
      }
 }
+
