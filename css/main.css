@@ -76,6 +76,10 @@ span.slogan {
     padding: 0 15px;
 }
 
+h1 {
+    color: var(--darkGreen);
+}
+
 a {
     color: rgb(44, 44, 44);
     text-decoration: none;
