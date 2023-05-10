@@ -27,7 +27,7 @@ body {
 }
 
 #container1 {
-    border: 2px solid red;
+    border: 2px solid transparent;
     width: 100%;
     margin-bottom: 3rem;
     text-align: center;
@@ -370,6 +370,11 @@ body {
     #sabemosdepropiedades{
         padding-top: 1rem;
     }
+
+    main {
+       max-height: 602px;
+    } 
+    
     #container1{
         border: 2px solid transparent;  
     }
@@ -379,13 +384,13 @@ body {
     }
     
     .casas{
-        margin: 2rem 7rem;
+        margin: 0rem 7rem;
     }
     .locales{
-        margin: 2rem 7rem;
+        margin: 0rem 7rem;
     }
     .oficinas{
-        margin: 2rem 7rem;
+        margin: 0rem 7rem;
     }
     .departamentos{
         margin-left: 15rem;
@@ -394,13 +399,13 @@ body {
         margin-right: 15rem;
     }
     .lotes{
-        margin: 2rem 5rem;
+        margin: 0rem 5rem;
     }
     .depositos{
-        margin: 2rem 5rem;
+        margin: 0rem 5rem;
     }
     .campos{
-        margin: 2rem 5rem;
+        margin: 0rem 5rem;
     }
      
      .choise{
