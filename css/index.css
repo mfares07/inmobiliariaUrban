@@ -59,6 +59,7 @@ body {
     font-weight: 600;
     color: var(--lightGreen);
     border: 1px solid white;
+    margin-right: .5rem;
     padding: .5rem .5rem;
     background-color: black;
     border-radius: 10px;
@@ -81,7 +82,7 @@ body {
     border: 1px solid white;
     margin-bottom: .5rem;
     margin-right: .5rem;
-    margin-left: .5rem;
+    margin-left: 1rem;
     padding: .5rem .5rem;
     background-color: black;
     border-radius: 10px;
@@ -102,7 +103,7 @@ body {
     font-weight: 600;
     color: var(--lightGreen);
     border: 1px solid white;
-    margin: 0rem 1rem .5rem 1rem;
+    margin: 0rem 1rem .5rem .5rem;
     padding: .5rem .5rem;
     background-color: black;
     border-radius: 10px;
@@ -123,7 +124,7 @@ body {
     font-weight: 600;
     color: var(--lightGreen);
     border: 1px solid white;
-    margin: .5rem 1rem 0.5rem 1rem;
+    margin: .5rem .5rem 0.5rem 1rem;
     padding: .5rem .5rem;
     background-color: black;
     border-radius: 10px;
@@ -190,6 +191,7 @@ body {
     border: 1px solid white;
     margin-bottom: 1rem;
     margin-right: .3rem;
+    margin-left: 1rem;
     padding: .5rem .5rem;
     background-color: black;
     border-radius: 10px;
