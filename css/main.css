@@ -107,6 +107,10 @@ a {
     margin-top: 3rem;
     background-color: var(--darkGreen);
     color: var(--white);
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    z-index: 170;
 }
 
 .pie_menu {
