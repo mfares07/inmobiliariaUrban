@@ -107,7 +107,9 @@ a {
     margin-top: 3rem;
     background-color: var(--darkGreen);
     color: var(--white);
+    /* EMaldonadoMay: lo dejamos comentado .. fue una prueba que hizo MFares
     position: sticky;
+    */
     bottom: 0;
     width: 100%;
     z-index: 170;
