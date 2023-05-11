@@ -12,19 +12,11 @@ body {
     width: 100%;
 }
 
-<<<<<<< HEAD
-
-.fullcontainer {
-    min-height: 34.18rem;
-}
-
-=======
->>>>>>> 33f0b018b900a29bfa1b082b7917e99d3b8cee25
 #sabemosdepropiedades {
     text-align: center;
     text-shadow: 2px 4px 10px rgba(76, 75, 22, .6);
     font-size: 3rem;
-    margin: 2.5rem 0rem 2.5rem 0rem;     
+    margin: 2.5rem 0rem 2.5rem 0rem;
 }
 
 #container1 {
