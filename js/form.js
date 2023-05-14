@@ -111,7 +111,7 @@ let verificaMensaje = (e) => {
     else {
         revisar['message'] = 0;
     }
-    chequearWarning();
+
 }
 //Esta función limpia el formulario y remueve los warnings e iconos.
 let reset = () => {

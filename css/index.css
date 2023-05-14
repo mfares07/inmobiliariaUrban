@@ -12,6 +12,7 @@ body {
     width: 100%;
 }
 
+<<<<<<< HEAD
 
 .fullcontainer {
     min-height: 34.18rem;
@@ -25,11 +26,14 @@ body {
     justify-content: center;
     align-items: center;
 }
+=======
+>>>>>>> 24307ca5cb7f99490f6b70326cfaebbc1fc84e54
 #sabemosdepropiedades {
     width: 75%;
     text-align: center;
     text-shadow: 2px 4px 10px rgba(76, 75, 22, .6);
     font-size: 3rem;
+<<<<<<< HEAD
     margin: 2.5rem 0rem .5rem 0rem;
     background-color: rgba(255, 255, 255, 0.3);
 }
@@ -40,6 +44,9 @@ body {
     margin-bottom: 1rem;
     background-color: rgba(255, 255, 255, 0.3);
     text-align: center;
+=======
+    margin: 2.5rem 0rem 2.5rem 0rem;
+>>>>>>> 24307ca5cb7f99490f6b70326cfaebbc1fc84e54
 }
 
 #container1 {

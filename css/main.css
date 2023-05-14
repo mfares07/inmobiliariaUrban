@@ -108,7 +108,7 @@ a {
     background-color: var(--darkGreen);
     color: var(--white);
     position: sticky;
-    bottom: 0;
+    margin-bottom: 0;
     width: 100%;
     z-index: 170;
 }
