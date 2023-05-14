@@ -43,6 +43,7 @@ function chequearWarning() {
 //De lo contrario, agrega un mensaje de error en los inputs.
 function envio(e) {
     e.preventDefault();
+    chequearWarning();
     if (validaTodo()) {
         formulario.submit();
         reset();
@@ -52,7 +53,6 @@ function envio(e) {
         }, 4000);
     }
     else {
-        chequearWarning();
         if (selector.value == 'elegir') {
             document.querySelector('.asunto .form_input_error').classList.add('form_input_error-js');
         }
