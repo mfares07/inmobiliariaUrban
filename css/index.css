@@ -35,7 +35,9 @@ body {
 }
 #descripcion{
     border: 2px solid transparent;
-    color: var(--lightGreen);
+    /*color: var(--lightGreen);*/
+    color: var(--darkGreen);
+    
     max-width: 85%;
     font-size: 1.3rem;
     margin-bottom: 1rem;
