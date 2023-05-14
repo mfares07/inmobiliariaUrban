@@ -12,236 +12,70 @@ body {
     width: 100%;
 }
 
-<<<<<<< HEAD
 
 .fullcontainer {
     min-height: 34.18rem;
 }
 
-=======
->>>>>>> 33f0b018b900a29bfa1b082b7917e99d3b8cee25
+
+#container0{
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 #sabemosdepropiedades {
+    width: 75%;
     text-align: center;
     text-shadow: 2px 4px 10px rgba(76, 75, 22, .6);
     font-size: 3rem;
-    margin: 2.5rem 0rem 2.5rem 0rem;     
+    margin: 2.5rem 0rem .5rem 0rem;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+#descripcion{
+    border: 2px solid transparent;
+    max-width: 85%;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
 }
 
 #container1 {
     border: 2px solid transparent;
-    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 }
 
-.casas {
+.botones {
+    margin: .8rem 1.5rem;
     font-size: 25px;
     font-weight: 600;
     color: var(--lightGreen);
     border: 1px solid white;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
     padding: .8rem .8rem;
     background-color: black;
     border-radius: 10px;
     cursor: pointer;
     position: relative;
+    text-align: center;
 }
-
-.casas::before {
-    content: "Casas";
+.botones::before {
+    content: "Casas", "Locales", "Oficinas", "Departamentos", "Emprendimientos", "Lotes", "Depositos", "Campos";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-
-.locales {
-    font-size: 25px;
-    font-weight: 600;
-    color: var(--lightGreen);
-    border: 1px solid white;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-    padding: .8rem .8rem;
-    background-color: black;
-    border-radius: 10px;
-    cursor: pointer;
-    position: relative;
-}
-
-.locales::before {
-    content: "Locales";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.oficinas {
-    font-size: 25px;
-    font-weight: 600;
-    color: var(--lightGreen);
-    border: 1px solid white;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-    padding: .8rem .8rem;
-    background-color: black;
-    border-radius: 10px;
-    cursor: pointer;
-    position: relative;
-}
-
-.oficinas::before {
-    content: "Oficinas";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.departamentos {
-    font-size: 25px;
-    font-weight: 600;
-    color: var(--lightGreen);
-    border: 1px solid white;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-    padding: .8rem .8rem;
-    background-color: black;
-    border-radius: 10px;
-    cursor: pointer;
-    position: relative;
-}
-
-.departamentos::before {
-    content: "Departamentos";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.emprendimientos {
-    font-size: 25px;
-    font-weight: 600;
-    color: var(--lightGreen);
-    border: 1px solid white;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-    padding: .8rem .8rem;
-    background-color: black;
-    border-radius: 10px;
-    cursor: pointer;
-    position: relative;
-}
-
-.emprendimientos::before {
-    content: "Emprendimientos";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.lotes {
-    font-size: 25px;
-    font-weight: 600;
-    color: var(--lightGreen);
-    border: 1px solid white;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-    padding: .8rem .8rem;
-    background-color: black;
-    border-radius: 10px;
-    cursor: pointer;
-    position: relative;
-
-}
-
-.lotes::before {
-    content: "Lotes";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.depositos {
-    font-size: 25px;
-    font-weight: 600;
-    color: var(--lightGreen);
-    border: 1px solid white;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-    padding: .8rem .8rem;
-    background-color: black;
-    border-radius: 10px;
-    cursor: pointer;
-    position: relative;
-}
-
-.depositos::before {
-    content: "Depositos";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.campos {
-    font-size: 25px;
-    font-weight: 600;
-    color: var(--lightGreen);
-    border: 1px solid white;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-    padding: .8rem .8rem;
-    background-color: black;
-    border-radius: 10px;
-    cursor: pointer;
-    position: relative;
-}
-
-.campos::before {
-    content: "Campos";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.casas:hover {
+.botones:hover {
     transform: scale(1.2, 1.2);
 }
 
-.locales:hover {
-    transform: scale(1.2, 1.2);
-}
-
-.oficinas:hover {
-    transform: scale(1.2, 1.2);
-}
-
-.departamentos:hover {
-    transform: scale(1.2, 1.2);
-}
-
-.emprendimientos:hover {
-    transform: scale(1.2, 1.2);
-}
-
-.lotes:hover {
-    transform: scale(1.2, 1.2);
-}
-
-.depositos:hover {
-    transform: scale(1.2, 1.2);
-}
-
-.campos:hover {
-    transform: scale(1.2, 1.2);
-}
 
 #container2 {
     border: 2px solid transparent;
@@ -256,10 +90,7 @@ body {
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
-    padding: 0.5rem 0.5rem .5rem .5rem;
-    margin-left: .3rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    padding: .5rem .5rem;
     border-radius: 35px;
 }
 
@@ -284,51 +115,21 @@ body {
 
 
 
-@media screen and (min-width: 760px) {
-    #container1 {
-        padding: 19px;
+@media screen and (min-width: 768px) {
+    #sabemosdepropiedades {
+       width: 75%;
     }
 
-    .casas {
-        margin: 0rem 3rem;
-    }
-
-    .locales {
-        margin: 0rem 3rem;
-    }
-
-    .oficinas {
-        margin: 0rem 3rem;
-    }
-
-    .departamentos {
-        margin: 3rem 4rem 3rem 2rem;
-    }
-
-    .emprendimientos {
-        margin: 3rem 2rem 3rem 1rem;
-    }
-
-    .lotes {
-        margin: 0rem 2rem 0rem 2rem;
-    }
-
-    .depositos {
-        margin: 0rem 2rem 0rem 2rem;
-    }
-
-    .campos {
-        margin: 0rem 2rem 0rem 2rem;
+    .botones{
+        margin: 1.5rem 2.4rem;
     }
 
 
     #container2 {
         border: 2px solid transparent;
-        padding: 10px;
+        padding-top: 15px;
         display: flex;
         flex-direction: row;
-        margin-top: 0;
-        margin-bottom: 0;
     }
 
     .choise {
@@ -349,10 +150,17 @@ body {
 }
 
 
-@media screen and (min-width: 896px) {
-    #container2 {
-        margin-bottom: 6rem;
-    }
+@media screen and (min-width: 848px) {
+    #sabemosdepropiedades {
+        width: 65%;
+     }
+     .botones{
+        margin: 1.5rem 3.5rem;
+     }
+ 
+     #container1 {
+         margin: 2rem 3rem;
+     }
 
     .barrios {
         margin-left: 0rem;
@@ -370,66 +178,38 @@ body {
 
 }
 
-@media screen and (min-width: 1000px) {
+
+@media screen and (min-width: 896px) {
     #sabemosdepropiedades {
-        padding-top: 1rem;
+        max-width: 70%;
     }
-
-    main {
-        max-height: 602px;
-    }
-
     #container1 {
-        border: 2px solid transparent;
-    }
+        margin: 2rem 5rem;
+}
 
-    #container2 {
-        border: 2px solid transparent;
+@media screen and (min-width: 1043px){
+    #sabemosdepropiedades {
+        max-width: 55%;
     }
-
-    .casas {
-        margin: 0rem 7rem;
-    }
-
-    .locales {
-        margin: 0rem 7rem;
-    }
-
-    .oficinas {
-        margin: 0rem 7rem;
-    }
-
-    .departamentos {
-        margin-left: 15rem;
-    }
-
-    .emprendimientos {
-        margin-right: 15rem;
-    }
-
-    .lotes {
-        margin: 0rem 5rem;
-    }
-
-    .depositos {
-        margin: 0rem 5rem;
-    }
-
-    .campos {
-        margin: 0rem 5rem;
-    }
-
-    .choise {
-        color: black;
-        background-color: rgba(255, 255, 255, 0.3);
-    }
-
-    .barrios {
-        margin-top: 30px;
-        height: 1.9rem;
-    }
-
-    .boton {
-        margin-top: 25px;
+    .botones{
+        margin: 1.5rem 3rem;
     }
 }
+
+@media screen and (min-width: 1120px){
+    .botones{
+        margin: 1.5rem 3.5rem;
+    }
+
+@media screen and (min-width: 1200px){
+    #sabemosdepropiedades {
+        max-width: 47%;
+    }
+    #container1 {
+        margin: 1rem 8rem;
+        .botones{
+            margin: 1.5rem 5rem;
+        }
+    }
+}
+
