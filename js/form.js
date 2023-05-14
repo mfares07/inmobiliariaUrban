@@ -43,7 +43,6 @@ function chequearWarning() {
 //De lo contrario, agrega un mensaje de error en los inputs.
 function envio(e) {
     e.preventDefault();
-    chequearWarning();
     if (validaTodo()) {
         formulario.submit();
         reset();
