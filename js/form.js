@@ -52,6 +52,7 @@ function envio(e) {
         }, 4000);
     }
     else {
+        chequearWarning();
         if (selector.value == 'elegir') {
             document.querySelector('.asunto .form_input_error').classList.add('form_input_error-js');
         }
@@ -110,6 +111,7 @@ let verificaMensaje = (e) => {
     else {
         revisar['message'] = 0;
     }
+
 }
 //Esta función limpia el formulario y remueve los warnings e iconos.
 let reset = () => {
