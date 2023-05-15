@@ -36,9 +36,8 @@ body {
 #descripcion{
     border: 2px solid transparent;
     /*color: var(--lightGreen);*/
-    color: var(--darkGreen);
-    
-    max-width: 85%;
+    color: var(--darkGreen); 
+    max-width: 60%;
     font-size: 1.3rem;
     margin-bottom: 1rem;
     background-color: rgba(255, 255, 255, 0.5);
@@ -82,8 +81,9 @@ body {
 
 #container2 {
     border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
     text-align: left;
-    width: 100%;
 }
 
 
@@ -116,6 +116,30 @@ body {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
+/*  whatsapp  */
+#whatsapp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 130px;
+    right: 40px;
+    background-color: #0df053;
+    font-size: 40px;
+    border-radius: 28px;
+    text-align: center;
+    z-index: 999;
+}
+
+#whatsapp:hover{
+    background: white;
+}
+.fa-whatsapp{
+    color: white;
+}
+.fa-whatsapp:hover{
+    color: #0df053 
+}
 
 
 @media screen and (min-width: 768px) {
