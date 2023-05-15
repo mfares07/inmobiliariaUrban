@@ -1,3 +1,6 @@
+/*Los datos obtenidos de la api de randomuser serán mostrados 
+en los placeholders del formulario de forma aleatoria*/
+
 const nombre = document.getElementById('name');
 const apellido = document.getElementById('lastname');
 const mail = document.getElementById('email');
