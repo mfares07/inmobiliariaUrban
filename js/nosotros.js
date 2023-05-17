@@ -2,7 +2,7 @@
 
 const apiKey = "36302400-6143fac907803f294da8caefe";
 const query = "buenos+aires+arquitectura";
-const url = `https://pixabay.com/api/?key=${apiKey}&q=${encodeURIComponent(query)}&lang=es&image_type=photo&per_page=200`;
+const url = `https://pixabay.com/api/?key=${apiKey}&q=${encodeURIComponent(query)}&lang=es&image_type=photo&orientation=horizontal&per_page=200`;
 const articuloSomos = document.getElementById("imagenRandom");
 
 fetch(url)
