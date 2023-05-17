@@ -30,9 +30,11 @@ main p {
    border-radius: 20px;
 }
 
-#tipo, 
-#comprar, 
-#precio{
+#tipo,
+#comprar,
+#precio {
+   width: 80%;
+   max-width: 20rem;
    background-color: white;
 }
 
@@ -79,7 +81,7 @@ img {
    height: 366px;
 }
 
-.detail { 
+.detail {
    padding: 1rem;
 }
 
@@ -134,4 +136,28 @@ img {
 
 .pie_derechos {
    margin-bottom: 0;
+}
+
+
+@media (max-width: 640px) {
+
+   .pie {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: 100%;
+      height: auto;
+      align-items: center;
+      justify-content: center;
+      padding-top: 1rem;
+   }
+
+   .pie_redes,
+   .pie_info,
+   .pie_derechos {
+      justify-content: center;
+      align-self: center;
+      padding: 0;
+      margin: 0;
+   }
+
 }
