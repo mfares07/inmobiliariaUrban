@@ -1,6 +1,7 @@
 # Inmobiliaria Urban
 [![header-Git.jpg](https://i.postimg.cc/HLrHTyC2/header-Git.jpg)](https://postimg.cc/mcWKwhkz)
-#### <span style="color: orange; text-align: center;">Proyecto de Front-end utilizando Html, Css y Js para el curso Full Stack en Python del programa Codo a codo.</span>#### 
+
+#### ![#4C4B16]Proyecto de Front-end utilizando Html, Css y Js para el curso Full Stack en Python del programa Codo a codo.`#4C4B16`####
 
 ### Animaciones:
 
