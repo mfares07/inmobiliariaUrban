@@ -18,12 +18,17 @@
 **- Animación para las secciones Quienes Somos, Misión Visión, Valores, Qué nos diferencia y Nuestros Servicios en "Nosotros".**
 [ Clases .slide-left (para las dos primeras mencionadas) y .slide-right (para las dos últimas) en about.css ] 
 
+##
+##
 
 ### APIs utilizadas:
 
 - Randomuser https://randomuser.me/api [js/api.js]
 
 - Pixabay https://pixabay.com/api [js/nosotros.js]
+
+##
+##
 
 ### Integrantes:
 
