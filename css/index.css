@@ -145,6 +145,26 @@ body {
     color: #0df053 
 }
 
+
+
+/*  bitcoin   */
+#app{
+    border: 2px solid transparent;
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+.bit{
+    color: var(--lightGreen);
+    background-color: black;
+    justify-items: center;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+
+
+
 @media screen and (min-width: 500px) {
     #descripcion {
         width: 60%;
