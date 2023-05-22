@@ -148,7 +148,7 @@ body {
 
 
 /*  bitcoin   */
-#app{
+#container3{
     border: 2px solid transparent;
     padding-top: 4rem;
     display: flex;
